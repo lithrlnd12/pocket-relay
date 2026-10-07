@@ -1,0 +1,8 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'org.pocketrelay.android'
+    compileSdk 35
+    defaultConfig { applicationId 'org.pocketrelay.android'; minSdk 26; targetSdk 35; versionCode 1; versionName '0.1.0' }
+    sourceSets { main.java.srcDirs += '../core/src/main/java' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
